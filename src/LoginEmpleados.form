@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="LoginEmpleados">
-  <grid id="27dc6" binding="panelLogin" layout-manager="GridLayoutManager" row-count="9" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="panelLogin" layout-manager="GridLayoutManager" row-count="10" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="969" height="689"/>
+      <xy x="20" y="20" width="704" height="579"/>
     </constraints>
     <properties>
       <background color="-789017"/>
@@ -17,7 +17,7 @@
       </vspacer>
       <hspacer id="ba1df">
         <constraints>
-          <grid row="1" column="0" row-span="6" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="7" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
       <component id="ec806" class="javax.swing.JTextField" binding="usuarioText">
@@ -28,19 +28,9 @@
         </constraints>
         <properties/>
       </component>
-      <component id="cd785" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <font name="Britannic Bold" size="14" style="0"/>
-          <foreground color="-13236415"/>
-          <text value="Contraseña"/>
-        </properties>
-      </component>
       <component id="3a3" class="javax.swing.JTextField" binding="contraText">
         <constraints>
-          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -48,17 +38,17 @@
       </component>
       <hspacer id="dfda2">
         <constraints>
-          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="3" row-span="2" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
       <vspacer id="24ef7">
         <constraints>
-          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
       <component id="ba798" class="javax.swing.JButton" binding="RegistrarBoton">
         <constraints>
-          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Registrar"/>
@@ -66,7 +56,7 @@
       </component>
       <component id="8c07d" class="javax.swing.JButton" binding="IngresarBoton">
         <constraints>
-          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Ingresar"/>
@@ -85,17 +75,27 @@
       </component>
       <component id="ade82" class="javax.swing.JLabel">
         <constraints>
-          <grid row="1" column="1" row-span="6" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="1" row-span="7" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <enabled value="true"/>
           <font name="Britannic Bold" size="26" style="1"/>
           <foreground color="-15660788"/>
           <horizontalTextPosition value="0"/>
-          <icon value="Imagenes/Fondo.jpg"/>
+          <icon value="Imagenes/zyro-image (2) (1).png"/>
           <text value="Bienvenido"/>
           <verticalAlignment value="0"/>
           <verticalTextPosition value="0"/>
+        </properties>
+      </component>
+      <component id="cd785" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Britannic Bold" size="14" style="0"/>
+          <foreground color="-13236415"/>
+          <text value="Contraseña"/>
         </properties>
       </component>
     </children>

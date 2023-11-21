@@ -19,7 +19,6 @@ public class LoginEmpleados  extends JFrame{
     ResultSet Resultado;
 
 
-
     public LoginEmpleados() {
 
         IngresarBoton.addActionListener(new ActionListener() {
@@ -33,7 +32,6 @@ public class LoginEmpleados  extends JFrame{
             }
         });
 
-      //Este boton no se como solucionarlo
         RegistrarBoton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -43,11 +41,7 @@ public class LoginEmpleados  extends JFrame{
             }
         });
 
-
-
     }
-
-    // hasta aqui
 
     public Connection conectar(){
         try {
@@ -71,8 +65,9 @@ public class LoginEmpleados  extends JFrame{
             if (Resultado.next()){
                 validacion = 1;
                 if(validacion==1){
-                    Usuarios enlazar = new Usuarios();
-                    enlazar.mostrarventanaUsuario();
+
+                    SeleccionDeventana enlazar = new SeleccionDeventana();
+                    enlazar.mostrarSeleccionVentana();
                 }
             }else {
                 JOptionPane.showMessageDialog(null,"Error de acceso, Usuario no autorizado");

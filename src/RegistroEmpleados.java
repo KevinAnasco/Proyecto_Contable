@@ -24,8 +24,6 @@ public class RegistroEmpleados  extends JFrame{
 
     public RegistroEmpleados() {
 
-
-
         BotRegistarEmple.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -39,17 +37,17 @@ public class RegistroEmpleados  extends JFrame{
         });
 
 
-        //Falta arreglar
         BotLoginVolver.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 LoginEmpleados enlazar =  new LoginEmpleados();
                 enlazar.mostrarLogin();
 
-
             }
         });
+
     }
+
     public Connection conectar(){
         try {
             conexion= DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/Proyecto_Contable","root","Kevin776anasco");
