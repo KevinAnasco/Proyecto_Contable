@@ -11,7 +11,6 @@ public class SeleccionDeventana extends JFrame{
     private JButton BotLlevarRegClientes;
     private JButton BotSalirAPP;
 
-
     public SeleccionDeventana() {
         BotLlevarRegProduc.addActionListener(new ActionListener() {
             @Override
@@ -34,14 +33,19 @@ public class SeleccionDeventana extends JFrame{
                 enlazar.mostrarregistrocliente();
             }
         });
+        BotSalirAPP.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
     }
-
     public void mostrarSeleccionVentana(){
         SeleccionDeventana mostrarVSeleccion = new SeleccionDeventana();
         mostrarVSeleccion.setContentPane(new SeleccionDeventana().PanelEleccion);
         mostrarVSeleccion.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        mostrarVSeleccion.setVisible(true);
         mostrarVSeleccion.pack();
-
+        mostrarVSeleccion.setLocationRelativeTo(null);
+        mostrarVSeleccion.setVisible(true);
     }
 }
